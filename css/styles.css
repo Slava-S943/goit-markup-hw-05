@@ -59,6 +59,7 @@ section {
 
 :root {
   --white-color: #ffffff;
+  fill: var(--checkbox-icon-color);
 }
 
 /* font-family: "Raleway", sans-serif; */
@@ -604,6 +605,12 @@ section {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
   background-color: #404bbf;
@@ -627,7 +634,7 @@ section {
 }
 
 .modal-field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .modal-label {
@@ -650,6 +657,7 @@ section {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
+  background-color: transparent;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -681,8 +689,8 @@ section {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  background-color: transparent;
   padding: 8px 16px;
+  background-color: transparent;
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -725,15 +733,19 @@ section {
   fill: transparent;
 }
 
+.modal-checkbox-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-checkbox:checked + .modal-checkbox-label .modal-checkbox-icon {
   opacity: 1;
   fill: #fff;
 }
 
 .modal-checkbox:checked + .modal-checkbox-label .modal-checkbox-custom {
-  border-color: #404bbf;
+  border: none;
   background-color: #404bbf;
-  fill: #ffffff;
+  fill: var(--checkbox-icon-color);
 }
 
 .privacy-link {
@@ -744,7 +756,7 @@ section {
   display: block;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -756,5 +768,6 @@ section {
   cursor: pointer;
   background-color: #4d5ae5;
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
