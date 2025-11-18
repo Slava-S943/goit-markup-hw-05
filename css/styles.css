@@ -719,6 +719,10 @@ section {
   margin-bottom: 8px;
 }
 
+.modal-form .modal-field:nth-child(4) {
+  margin-bottom: 16px;
+}
+
 .modal-label {
   display: block;
   font-weight: 400;
