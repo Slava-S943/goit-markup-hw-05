@@ -59,7 +59,7 @@ section {
 
 :root {
   --white-color: #ffffff;
-  fill: var(--checkbox-icon-color);
+  --checkbox-icon-color: #f4f4fd;
 }
 
 /* font-family: "Raleway", sans-serif; */
@@ -622,6 +622,10 @@ section {
   fill: #fff;
 }
 
+.modal-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-title {
   font-weight: 500;
   font-size: 16px;
@@ -638,7 +642,7 @@ section {
 }
 
 .modal-field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .modal-label {
@@ -713,7 +717,6 @@ section {
 }
 
 .modal-checkbox-label {
-  display: flex;
   align-items: center;
   gap: 8px;
   font-weight: 400;
@@ -741,14 +744,14 @@ section {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-checkbox:checked + .modal-checkbox-label .modal-checkbox-icon {
-  opacity: 1;
-  fill: #fff;
-}
-
 .modal-checkbox:checked + .modal-checkbox-label .modal-checkbox-custom {
   border: none;
   background-color: #404bbf;
+  fill: var(--checkbox-icon-color);
+}
+
+.modal-checkbox:checked + .modal-checkbox-label .modal-checkbox-icon {
+  opacity: 1;
   fill: var(--checkbox-icon-color);
 }
 
