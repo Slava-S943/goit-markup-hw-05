@@ -619,6 +619,8 @@ section {
 
 /* #endregion Footer */
 
+/* #region Footer subscribe form */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -696,6 +698,10 @@ section {
 
 .modal-close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-top {
+  margin-bottom: 16px;
 }
 
 .modal-title {
@@ -849,3 +855,5 @@ section {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* #endregion Footer subscribe form */
